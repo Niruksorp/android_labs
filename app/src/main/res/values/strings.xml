@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">lab2</string>
+    <string name="restsearch">RestSearch</string>
+    <string name="OnGeo">Включить геолокацию</string>
+    <string name="text1">Рядом с вами</string>
+    <string name="text2">Рекомендовано вам</string>
+    <string name="text3">Новое</string>
+    <string name="map">Карта</string>
+    <string name="list">Список</string>
+    <string name="inputName">Введите название</string>
+    <string name="search">Поиск</string>
+    <string name="kfc">kfc</string>
+    <string name="textUser">Оценка пользователей: 4.6</string>
+    <string name="miraStreet">Мира 47</string>
+    <string name="grilnizaName">Грильница</string>
+    <string name="grilnizaStreet">Мира 78</string>
+    <string name="grilnizaScore">4.3</string>
+    <string name="newYork">Нью-Йорк</string>
+</resources>
