@@ -19,9 +19,11 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
+        android:ellipsize="end"
+        android:textSize="20sp"
         android:text="Проскурин Глеб Егорович"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView"
@@ -30,9 +32,11 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="47dp"
+        android:ellipsize="end"
+        android:textSize="20sp"
         android:text="Backend Java Developer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView"
@@ -44,6 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
+        android:textSize="20sp"
         android:text="GitHub:"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView4"
         app:layout_constraintStart_toStartOf="parent" android:background="@drawable/back"/>
@@ -53,6 +58,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="74dp"
+        android:textSize="20sp"
+        android:ellipsize="end"
         android:text="https://github.com/Niruksorp"
         app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/imageView" android:background="@drawable/back"/>
@@ -62,6 +69,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
+        android:textSize="20sp"
         android:text="Основные навыки:"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView6"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,6 +81,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:background="@drawable/back"
+        android:textSize="20sp"
+        android:ellipsize="end"
+        android:maxLines="2"
         android:text="Java, Spring Boot(Core, Cloud, Data, etc)"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView5"
