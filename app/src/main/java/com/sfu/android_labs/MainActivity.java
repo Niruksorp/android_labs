@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
@@ -26,7 +27,7 @@ import java.util.List;
         recyclerView.setLayoutManager(mLayoutManager);
 
         FloatingActionButton fab = findViewById(R.id.activity_main__fb_add);
-        Intent intent = new Intent(MainActivity.this, UserProfileActivity   .class);
+        Intent intent = new Intent(MainActivity.this, UserProfileActivity.class);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

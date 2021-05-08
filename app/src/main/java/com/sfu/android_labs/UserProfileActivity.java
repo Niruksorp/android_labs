@@ -16,6 +16,7 @@ public class UserProfileActivity extends AppCompatActivity {
         UserProfileAdapter movieAdapter = new UserProfileAdapter(info);
         ImageView posterImageView = this.findViewById(R.id.imageView);
         posterImageView.setImageResource(R.drawable.ic_launcher_background);
+
         SupportMapFragment mapFragment = SupportMapFragment.newInstance();
         getSupportFragmentManager()
                 .beginTransaction()
