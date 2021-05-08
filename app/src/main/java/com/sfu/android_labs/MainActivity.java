@@ -26,7 +26,7 @@ import java.util.List;
         recyclerView.setLayoutManager(mLayoutManager);
 
         FloatingActionButton fab = findViewById(R.id.activity_main__fb_add);
-        Intent intent = new Intent(MainActivity.this, UserProfileActivity.class);
+        Intent intent = new Intent(MainActivity.this, NewVacationActivity.class);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

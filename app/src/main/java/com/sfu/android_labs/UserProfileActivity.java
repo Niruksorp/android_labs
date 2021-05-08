@@ -1,6 +1,7 @@
 package com.sfu.android_labs;
 
 import android.os.Bundle;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,6 +14,8 @@ public class UserProfileActivity extends AppCompatActivity {
         setContentView(R.layout.user_profile);
         User info = new User();
         UserProfileAdapter movieAdapter = new UserProfileAdapter(info);
+        ImageView posterImageView = this.findViewById(R.id.imageView);
+        posterImageView.setImageResource(R.drawable.ic_launcher_background);
         SupportMapFragment mapFragment = SupportMapFragment.newInstance();
         getSupportFragmentManager()
                 .beginTransaction()

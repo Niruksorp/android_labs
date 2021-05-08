@@ -16,4 +16,7 @@
     <string name="grilnizaStreet">Мира 78</string>
     <string name="grilnizaScore">4.3</string>
     <string name="newYork">Нью-Йорк</string>
+    <string name="vacation_info">Описание вакансии(чем интересно)</string>
+    <string name="vacantion_description">Используемые технологии</string>
+    <string name="vacation_name">Название вакансии / организации</string>
 </resources>
