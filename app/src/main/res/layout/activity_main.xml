@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/activity_main__rv_movies"
+        android:id="@+id/activity_main__rv_vacations"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

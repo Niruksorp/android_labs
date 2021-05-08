@@ -19,14 +19,14 @@ import java.util.List;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        RecyclerView recyclerView = findViewById(R.id.activity_main__rv_movies);
-        MovieAdapter movieAdapter = new MovieAdapter(generateMovieList());
-        recyclerView.setAdapter(movieAdapter);
+        RecyclerView recyclerView = findViewById(R.id.activity_main__rv_vacations);
+        VacationAdapter vacationAdapter = new VacationAdapter(generateMovieList());
+        recyclerView.setAdapter(vacationAdapter);
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(mLayoutManager);
 
         FloatingActionButton fab = findViewById(R.id.activity_main__fb_add);
-        Intent intent = new Intent(MainActivity.this, NewVacationActivity.class);
+        Intent intent = new Intent(MainActivity.this, UserProfileActivity   .class);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,10 +35,10 @@ import java.util.List;
         });
     }
 
-        private List<Movie> generateMovieList() {
-            List<Movie> list = new ArrayList<>();
-            list.add(new Movie("some","dede",R.drawable.ic_launcher_background));
-            list.add(new Movie("some","dede",R.drawable.ic_launcher_background));
+        private List<Vacation> generateMovieList() {
+            List<Vacation> list = new ArrayList<>();
+            list.add(new Vacation("some","dede",R.drawable.ic_launcher_background));
+            list.add(new Vacation("some","dede",R.drawable.ic_launcher_background));
             return list;
         }
 

@@ -9,33 +9,31 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
 import java.util.List;
 
-public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHolder> {
+public class VacationAdapter extends RecyclerView.Adapter<VacationAdapter.MovieViewHolder> {
 
-    private final List<Movie> movies;
+    private final List<Vacation> vacations;
 
-    public MovieAdapter(List<Movie> movies) {
-        this.movies = movies;
+    public VacationAdapter(List<Vacation> vacations) {
+        this.vacations = vacations;
     }
 
     @NonNull
     @Override
     public MovieViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.element_film, viewGroup, false);
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.element_vacation, viewGroup, false);
         return new MovieViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MovieViewHolder viewHolder, int i) {
-        viewHolder.bind(movies.get(i));
+        viewHolder.bind(vacations.get(i));
     }
 
     @Override
     public int getItemCount() {
-        return movies.size();
+        return vacations.size();
     }
 
     static final class MovieViewHolder extends RecyclerView.ViewHolder {
@@ -51,10 +49,10 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
             posterImageView = itemView.findViewById(R.id.movie_item__iv_poster);
         }
 
-        private void bind(@NonNull Movie movie) {
-            nameTextView.setText(movie.name);
-            descriptionTextView.setText(movie.description);
-            posterImageView.setImageResource(movie.poster);
+        private void bind(@NonNull Vacation vacation) {
+            nameTextView.setText(vacation.name);
+            descriptionTextView.setText(vacation.description);
+            posterImageView.setImageResource(vacation.poster);
         }
 
     }
